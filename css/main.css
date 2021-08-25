@@ -134,12 +134,24 @@ ul {
 }
 
 .menu__item {
+  text-align: center;
   width: 250px;
   background-color: #927f63;
   border: 1px solid #7a5b46;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  text-align: center;
-  font-size: 18px;
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .menu__item {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .menu__item {
+    font-size: 20px;
+  }
 }
 
 .menu__submenu {
@@ -173,8 +185,6 @@ ul {
 
 .backgrond {
   position: absolute;
-  width: 200px;
-  height: 200px;
   z-index: 1;
   top: 50%;
   left: 50%;
@@ -183,6 +193,13 @@ ul {
   background-image: url("../img/VALibraryBackground.png");
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+@media (min-width: 768px) {
+  .backgrond {
+    width: 744px;
+    height: 549px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -226,9 +243,24 @@ ul {
 
 .footer__container {
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   padding: 20px;
+  font-size: 13px;
+}
+
+@media (min-width: 768px) {
+  .footer__container {
+    flex-direction: row;
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer__container {
+    font-size: 17px;
+  }
 }
 
 .reference__link {
@@ -236,9 +268,24 @@ ul {
   align-items: center;
 }
 
+.reference__img {
+  height: 50px;
+}
+
+@media (min-width: 768px) {
+  .reference__img {
+    height: 80px;
+  }
+}
+
 @media (min-width: 1024px) {
   .reference__img {
     height: 100px;
   }
+}
+
+.footer__item {
+  text-align: center;
+  padding: 7px;
 }
 /*# sourceMappingURL=main.css.map */

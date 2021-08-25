@@ -16,12 +16,7 @@
 
 .backgrond {
   position: absolute;
-  width: 200px;
-  height: 200px;
   z-index: 1;
-  // left: 50%;
-  // bottom: 50%;
-  // margin-right: -50%;
   top: 50%;
   left: 50%;
   margin-right: -50%;
@@ -30,10 +25,9 @@
   background-repeat: no-repeat;
   background-size: contain;
 
-  @media (min-width: 480px) {
-  }
-
   @media (min-width: 768px) {
+    width: 744px;
+    height: 549px;
   }
 
   @media (min-width: 1024px) {
