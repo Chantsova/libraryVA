@@ -1,0 +1,19 @@
+.main {
+  position: relative;
+  bottom: 0;
+  background-image: url("../img/VALibraryBG.png");
+  background-repeat: no-repeat;
+  height: 200px;
+
+  @media (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media (min-width: 1024px) {
+    height: 555px;
+  }
+}

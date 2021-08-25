@@ -1,0 +1,67 @@
+.header__container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: #ebe2d7;
+}
+
+.header__title {
+  display: block;
+  width: 296px;
+  height: 74px;
+  background-size: cover;
+  background-image: url("../img/VALibrTitle.png");
+  background-repeat: no-repeat;
+
+  @media (min-width: 480px) {
+    width: 456px;
+    height: 114px;
+  }
+
+  @media (min-width: 768px) {
+    width: 744px;
+    height: 186px;
+  }
+
+  @media (min-width: 1024px) {
+    width: 1000px;
+    height: 250px;
+  }
+}
+
+.menu__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__list > li {
+  display: inline-block;
+  margin-right: 20px;
+  position: relative;
+}
+.menu__list > li:last-child {
+  margin-right: 0;
+}
+
+.header__menu ul li:hover .menu__submenu {
+  visibility: visible;
+  opacity: 1;
+}
+
+.header__menu .menu__submenu {
+  visibility: hidden;
+  opacity: 0;
+  background: #bad78b;
+}
+
+.menu__submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
