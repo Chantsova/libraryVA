@@ -3,14 +3,17 @@
   padding: 0;
 }
 
+html,
 body {
   height: 100%;
   width: 100%;
-  background-color: #eaddcc;
+  background-color: #eee3d4;
+  font-family: "Alegreya", serif;
 }
 
 a {
   text-decoration: none;
+  color: inherit;
   padding: 0;
   margin: 0;
 }
@@ -27,9 +30,14 @@ button {
   margin: 0;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .wrapper {
-  display: table;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   width: 100%;
 }
 
@@ -60,7 +68,7 @@ button {
   display: flex;
   justify-content: center;
   text-align: center;
-  background-color: #ebe2d7;
+  background-color: #dfcdb7;
 }
 
 .header__title {
@@ -88,14 +96,20 @@ button {
 
 @media (min-width: 1024px) {
   .header__title {
-    width: 1000px;
-    height: 250px;
+    width: 900px;
+    height: 200px;
   }
+}
+
+.header__menu {
+  padding: 15px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #917b67;
 }
 
 .menu__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .menu__list > li {
@@ -116,10 +130,20 @@ button {
 .header__menu .menu__submenu {
   visibility: hidden;
   opacity: 0;
-  background: #bad78b;
+  background: #e4dcc8;
+}
+
+.menu__item {
+  width: 250px;
+  background-color: #927f63;
+  border: 1px solid #7a5b46;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  font-size: 18px;
 }
 
 .menu__submenu {
+  text-decoration: none;
   position: absolute;
   top: 100%;
   left: 0;
@@ -128,34 +152,93 @@ button {
   transition: 0.5s ease-in-out;
 }
 
+.menu__submenu > li:hover,
+.menu__submenu > li:focus {
+  color: #181615;
+  background-color: #c0b19a;
+}
+
+.fa {
+  font-family: "FontAwesome";
+  color: inherit;
+  padding-left: 10px;
+}
+
 .main {
   position: relative;
-  bottom: 0;
-  background-image: url("../img/VALibraryBG.png");
-  background-repeat: no-repeat;
+  flex: 1 1 auto;
+  height: 100%;
+  padding: 20px;
+}
+
+.backgrond {
+  position: absolute;
+  width: 200px;
   height: 200px;
-}
-
-@media (min-width: 480px) {
-  .main {
-    width: 480px;
-  }
-}
-
-@media (min-width: 768px) {
-  .main {
-    width: 768px;
-  }
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background-image: url("../img/VALibraryBackground.png");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 @media (min-width: 1024px) {
-  .main {
-    height: 555px;
+  .backgrond {
+    width: 1000px;
+    height: 738px;
   }
 }
 
+.content__wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 0;
+  z-index: 1;
+}
+
+.content__container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content__title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.content__directions {
+  padding-left: 35px;
+}
+
 .footer {
+  display: flex;
+  justify-content: center;
   background-color: #dfcdb7;
-  height: 200px;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+}
+
+.reference__link {
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .reference__img {
+    height: 100px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,4 +1,23 @@
 .footer {
+  display: flex;
+  justify-content: center;
   background-color: #dfcdb7;
-  height: 200px;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+}
+
+.reference__link {
+  display: flex;
+  align-items: center;
+}
+
+.reference__img {
+  @media (min-width: 1024px) {
+    height: 100px;
+  }
 }
