@@ -7,7 +7,6 @@ html,
 body {
   height: 100%;
   width: 100%;
-  background-color: #eee3d4;
   font-family: "Alegreya", serif;
 }
 
@@ -38,142 +37,61 @@ ul {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  width: 100%;
-}
-
-.container {
-  padding: 0 15px;
-  min-width: 320px;
-}
-
-@media (min-width: 480px) {
-  .container {
-    width: 480px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    width: 1024px;
-  }
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .header__container {
+  position: relative;
   display: flex;
   justify-content: center;
-  text-align: center;
-  background-color: #dfcdb7;
+  background-color: rgba(223, 185, 139, 0.6);
+  padding: 20px 20px 0px 20px;
+}
+
+.header__background {
+  background-size: cover;
+  background-image: linear-gradient(to right, rgba(44, 30, 22, 0.4), rgba(47, 48, 58, 0.5)), url("../img/VaodessaHeader.jpg");
+  background-repeat: no-repeat;
+  width: 728px;
+  height: 208px;
+}
+
+@media (min-width: 768px) {
+  .header__background {
+    width: 1400px;
+    height: 400px;
+  }
 }
 
 .header__title {
-  display: block;
-  width: 296px;
-  height: 74px;
-  background-size: cover;
-  background-image: url("../img/VALibrTitle.png");
-  background-repeat: no-repeat;
-}
-
-@media (min-width: 480px) {
-  .header__title {
-    width: 456px;
-    height: 114px;
-  }
-}
-
-@media (min-width: 768px) {
-  .header__title {
-    width: 744px;
-    height: 186px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .header__title {
-    width: 900px;
-    height: 200px;
-  }
-}
-
-.header__menu {
-  padding: 15px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background-color: #917b67;
-}
-
-.menu__list {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.menu__list > li {
-  display: inline-block;
-  margin-right: 20px;
-  position: relative;
-}
-
-.menu__list > li:last-child {
-  margin-right: 0;
-}
-
-.header__menu ul li:hover .menu__submenu {
-  visibility: visible;
-  opacity: 1;
-}
-
-.header__menu .menu__submenu {
-  visibility: hidden;
-  opacity: 0;
-  background: #e4dcc8;
-}
-
-.menu__item {
-  text-align: center;
-  width: 250px;
-  background-color: #927f63;
-  border: 1px solid #7a5b46;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-size: 14px;
-}
-
-@media (min-width: 768px) {
-  .menu__item {
-    font-size: 17px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .menu__item {
-    font-size: 20px;
-  }
-}
-
-.menu__submenu {
-  text-decoration: none;
   position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  z-index: 10;
-  transition: 0.5s ease-in-out;
+  top: 100px;
+  left: -30px;
+  width: 300px;
+  display: block;
+  background-color: rgba(241, 233, 217, 0.7);
 }
 
-.menu__submenu > li:hover,
-.menu__submenu > li:focus {
-  color: #181615;
-  background-color: #c0b19a;
+@media (min-width: 768px) {
+  .header__title {
+    top: 210px;
+    left: -30px;
+    width: 600px;
+  }
 }
 
-.fa {
-  font-family: "FontAwesome";
-  color: inherit;
-  padding-left: 10px;
+.header__image {
+  position: relative;
+  left: 50px;
+  width: 250px;
+}
+
+@media (min-width: 768px) {
+  .header__image {
+    width: 450px;
+    left: 55px;
+  }
 }
 
 .main {

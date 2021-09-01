@@ -7,7 +7,6 @@ html,
 body {
   height: 100%;
   width: 100%;
-  background-color: #eee3d4;
   font-family: "Alegreya", serif;
 }
 
@@ -38,22 +37,24 @@ ul {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
-.container {
-  padding: 0 15px;
-  min-width: 320px;
+// .container {
+//   padding: 0 15px;
+//   min-width: 320px;
+//   border: 1px solid grey;
 
-  @media (min-width: 480px) {
-    width: 480px;
-  }
+//   @media (min-width: 480px) {
+//     width: 480px;
+//   }
 
-  @media (min-width: 768px) {
-    width: 768px;
-  }
+//   @media (min-width: 768px) {
+//     width: 768px;
+//   }
 
-  @media (min-width: 1024px) {
-    width: 1024px;
-  }
-}
+//   @media (min-width: 1024px) {
+//     width: 1024px;
+//   }
+// }
