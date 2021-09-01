@@ -7,7 +7,7 @@ html,
 body {
   height: 100%;
   width: 100%;
-  font-family: "Alegreya", serif;
+  font-family: "Raleway", sans-serif;
 }
 
 a {
@@ -44,22 +44,24 @@ ul {
 .header__container {
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  background-color: rgba(223, 185, 139, 0.6);
+  background-color: rgba(223, 185, 139, 0.45);
   padding: 20px 20px 0px 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .header__background {
   background-size: cover;
   background-image: linear-gradient(to right, rgba(44, 30, 22, 0.4), rgba(47, 48, 58, 0.5)), url("../img/VaodessaHeader.jpg");
   background-repeat: no-repeat;
-  width: 728px;
+  max-width: 728px;
   height: 208px;
 }
 
 @media (min-width: 768px) {
   .header__background {
-    width: 1400px;
+    max-width: 1400px;
     height: 400px;
   }
 }
@@ -70,12 +72,13 @@ ul {
   left: -30px;
   width: 300px;
   display: block;
-  background-color: rgba(241, 233, 217, 0.7);
+  background-color: rgba(253, 253, 253, 0.5);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 @media (min-width: 768px) {
   .header__title {
-    top: 210px;
+    top: 270px;
     left: -30px;
     width: 600px;
   }
@@ -94,69 +97,125 @@ ul {
   }
 }
 
-.main {
-  position: relative;
-  flex: 1 1 auto;
-  height: 100%;
-  padding: 20px;
-}
-
-.backgrond {
-  position: absolute;
-  z-index: 1;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  background-image: url("../img/VALibraryBackground.png");
-  background-repeat: no-repeat;
-  background-size: contain;
+.header__menu {
+  display: none;
 }
 
 @media (min-width: 768px) {
-  .backgrond {
-    width: 744px;
-    height: 549px;
+  .header__menu {
+    display: block;
+    padding: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: rgba(90, 69, 66, 0.8);
   }
 }
 
-@media (min-width: 1024px) {
-  .backgrond {
-    width: 1000px;
-    height: 738px;
+.menu__list {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.menu__list > li {
+  display: inline-block;
+  margin-right: 20px;
+  position: relative;
+}
+
+.menu__list > li:last-child {
+  margin-right: 0;
+}
+
+.header__menu ul li:hover .menu__submenu {
+  visibility: visible;
+  opacity: 1;
+}
+
+.header__menu .menu__submenu {
+  visibility: hidden;
+  opacity: 0;
+  background: rgba(253, 253, 253, 0.7);
+}
+
+.menu__link {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(253, 253, 253, 0.7);
+}
+
+@media (min-width: 955px) {
+  .menu__link {
+    font-size: 16px;
   }
 }
 
-.content__wrapper {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  top: 0;
-  z-index: 1;
-}
-
-.content__container {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.content__title {
+.menu__item {
   text-align: center;
-  margin-bottom: 20px;
+  width: 250px;
+  font-size: 12px;
+  font-weight: 600;
 }
 
-.content__directions {
-  padding-left: 35px;
+@media (min-width: 768px) {
+  .menu__item {
+    font-size: 17px;
+  }
+}
+
+.menu__item:hover .menu__link,
+.menu__item:focus .menu__link {
+  color: rgba(44, 30, 22, 0.9);
+}
+
+.menu__item:hover,
+.menu__item:focus {
+  background-color: rgba(253, 253, 253, 0.7);
+}
+
+.menu__submenu {
+  color: rgba(44, 30, 22, 0.9);
+  text-decoration: none;
+  position: absolute;
+  top: 100%;
+  left: -15%;
+  width: 130%;
+  z-index: 10;
+  margin-top: 15px;
+  transition: 0.5s ease-in-out;
+}
+
+@media (max-width: 955px) {
+  .menu__submenu {
+    left: 0;
+    width: 100%;
+  }
+}
+
+.menu__submenu > li {
+  padding: 5px 0;
+}
+
+.menu__submenu > li:hover,
+.menu__submenu > li:focus {
+  background-color: rgba(90, 69, 66, 0.4);
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  flex: 1 1 auto;
+  height: 100%;
+}
+
+.main__container {
+  padding: 20px;
+  max-width: 1400px;
+  box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.25);
 }
 
 .footer {
   display: flex;
   justify-content: center;
-  background-color: #dfcdb7;
+  background-color: rgba(223, 185, 139, 0.45);
 }
 
 .footer__container {

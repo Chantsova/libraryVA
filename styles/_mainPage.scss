@@ -1,63 +1,12 @@
 .main {
-  position: relative;
+  display: flex;
+  justify-content: center;
   flex: 1 1 auto;
   height: 100%;
+}
+
+.main__container {
   padding: 20px;
-
-  @media (min-width: 480px) {
-  }
-
-  @media (min-width: 768px) {
-  }
-
-  @media (min-width: 1024px) {
-  }
-}
-
-.backgrond {
-  position: absolute;
-  z-index: 1;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  background-image: url("../img/VALibraryBackground.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-
-  @media (min-width: 768px) {
-    width: 744px;
-    height: 549px;
-  }
-
-  @media (min-width: 1024px) {
-    width: 1000px;
-    height: 738px;
-  }
-}
-
-.content__wrapper {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  top: 0;
-  z-index: 1;
-}
-
-.content__container {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.content__title {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.content__directions {
-  padding-left: 35px;
+  max-width: 1400px;
+  box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.25);
 }
