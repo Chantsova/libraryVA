@@ -1,7 +1,8 @@
 .footer {
   display: flex;
   justify-content: center;
-  background-color: rgba(223, 185, 139, 0.45);
+  background-color: rgba(223, 185, 139, 0.4);
+  padding: 25px;
 }
 
 .footer__container {
@@ -9,8 +10,11 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  width: 1360px;
   padding: 20px;
   font-size: 13px;
+  box-shadow: rgba(90, 69, 66, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 
   @media (min-width: 768px) {
     flex-direction: row;
@@ -42,4 +46,8 @@
 .footer__item {
   text-align: center;
   padding: 7px;
+}
+
+.footer__weekend {
+  font-weight: 600;
 }

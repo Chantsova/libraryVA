@@ -42,20 +42,10 @@ ul {
   margin: 0 auto;
 }
 
-// .container {
-//   padding: 0 15px;
-//   min-width: 320px;
-//   border: 1px solid grey;
+address {
+  font-style: normal;
+}
 
-//   @media (min-width: 480px) {
-//     width: 480px;
-//   }
-
-//   @media (min-width: 768px) {
-//     width: 768px;
-//   }
-
-//   @media (min-width: 1024px) {
-//     width: 1024px;
-//   }
-// }
+.container {
+  padding: 0 15px;
+}
