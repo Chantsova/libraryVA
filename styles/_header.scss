@@ -10,10 +10,16 @@
 
 .header__background {
   background-size: cover;
+  // background-image: linear-gradient(
+  //     to right,
+  //     rgba(44, 30, 22, 0.4),
+  //     rgba(47, 48, 58, 0.5)
+  //   ),
+  //   url("../img/VaodessaHeader.jpg");
   background-image: linear-gradient(
       to right,
-      rgba(44, 30, 22, 0.4),
-      rgba(47, 48, 58, 0.5)
+      rgba(131, 104, 78, 0.5),
+      rgba(22, 16, 5, 0.6)
     ),
     url("../img/VaodessaHeader.jpg");
   background-repeat: no-repeat;
