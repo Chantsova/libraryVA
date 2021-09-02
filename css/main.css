@@ -309,6 +309,7 @@ address {
   text-align: center;
   font-size: 18px;
   background-color: rgba(223, 185, 139, 0.4);
+  padding: 5px;
 }
 
 .overlay {
@@ -403,7 +404,7 @@ address {
 
 @media (min-width: 1024px) {
   .footer__container {
-    font-size: 17px;
+    font-size: 16px;
   }
 }
 
