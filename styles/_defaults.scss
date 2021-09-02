@@ -7,7 +7,6 @@ html,
 body {
   height: 100%;
   width: 100%;
-  //
   font-family: "Raleway", sans-serif;
 }
 
@@ -34,6 +33,10 @@ ul {
   list-style-type: none;
 }
 
+address {
+  font-style: normal;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -42,10 +45,33 @@ ul {
   margin: 0 auto;
 }
 
-address {
-  font-style: normal;
+.section {
+  display: flex;
+  justify-content: center;
 }
 
 .container {
-  padding: 0 15px;
+  max-width: 1024px;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.section__title {
+  font-size: 20px;
+  text-align: center;
+}
+
+.hidden-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
