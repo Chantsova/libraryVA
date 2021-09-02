@@ -230,10 +230,34 @@ address {
   background-color: rgba(90, 69, 66, 0.4);
 }
 
+.mobileMenu__container {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .mobileMenu__container {
+    display: none;
+  }
+}
+
 .main {
   flex: 1 1 auto;
   height: 100%;
   box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.25);
+}
+
+.about__container {
+  padding: 40px 30px;
+}
+
+.about__text {
+  font-family: "Alegreya", serif;
+  margin-top: 13px;
+  font-size: 20px;
+  text-align: justify;
 }
 
 .box-menu {
@@ -453,5 +477,16 @@ address {
 .footer__title {
   font-family: "Alegreya", serif;
   font-size: 18px;
+}
+
+.menu__btn {
+  background-color: rgba(163, 117, 87, 0.5);
+  border: none;
+  outline: none;
+  box-shadow: 0px 4px 4px rgba(219, 198, 177, 0.5);
+}
+
+.menu__icon {
+  fill: rgba(22, 16, 5, 0.6);
 }
 /*# sourceMappingURL=main.css.map */

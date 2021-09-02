@@ -59,15 +59,25 @@
               <img class="header__image" src="./img/TitleVa.png" alt="IconVA">
             </div>            
           </div>
-         
+
+          <div class="mobileMenu__container">
+            <button class="menu__btn menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+              <svg class="menu__icon" width="24" height="16">
+                <use href="./img/icons.svg#icon-mobile-menu"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </header>
 
       <main class="main">
         <section class="about section">
-          <div class="container">
+          <div class="about__container container">
             <h1 class="section__title">Про бібліотеку</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, libero veritatis. At ex animi laudantium minima, iusto accusantium mollitia totam esse cupiditate explicabo, nam fuga eius molestiae enim velit? Perferendis ab asperiores at fugiat voluptates minima ut. Itaque error molestias debitis expedita totam exercitationem. Error molestiae consequuntur ex explicabo odio temporibus ad. Earum ipsum reiciendis voluptatibus eaque fugiat, quasi quidem nam quis similique ea culpa officiis soluta laborum obcaecati! Eaque beatae cumque maiores fugiat reicien</p>
+            <p class="about__text">Бібліотека Військової академії — простір друкованого слова, в якому відкривається доступ до книги різним поколінням курсантів та викладачів вже понад 120 років — якими б не були зміни у назві та спеціалізації військового навчального закладу.</p>
+            <p class="about__text">Сьогодні бібліотека, як структурний підрозділ Військової академії, забезпечує літературою та іншими інформаційними джерелами навчально-виховний і науковий процес військового вишу, в якому готуються кадри для Збройних сил України.</p>
+            <p class="about__text">На даний момент фонди бібліотеки складають понад 290 тисяч примірників. Це навчальна література з загальновійськової, військово-технічної, тактичної, гуманітарної підготовки (близько 204 тисяч примірників); наукова література (понад 25 тисяч книг). До послуг читачів бібліотеки Військової академії пропонується великий фонд художньої літератури (понад 53 тисячі примірники), яку можна взяти на абонемент. В бібліотеці покладено початок Фонду рідкісної книги.</p>
+            <p class="about__text">В книгозбірні Військової академії працюють справжні хранителі бібліотечних цінностей — бібліотекарі, професіоналізм яких, відданість справі, новаторство, ентузіазм в роботі є головним.</p>
           </div>
         </section>
 
@@ -220,6 +230,21 @@
       </footer>
       
     </div>
+
+    <!-- <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu"><svg class="mobile__closeIcon" width="18.67" height="18.67"
+          aria-label="Close">
+          <use href="./images/icons.svg#icon-close-mobile-menu"></use>
+          <title>Close</title>
+          <desc>Закрыть модальное окно</desc>
+        </svg></button>
+      <ul class="mobile__menu">
+        <li><a class="menu__item current" href="index.html">Студия</a></li>
+        <li><a class="menu__item" href="portfolio.html">Портфолио</a></li>
+        <li><a class="menu__item" href="#">Контакты</a></li>
+      </ul>
+    </div> -->
+
     <script src="index.js"></script>
   </body>
 </html>

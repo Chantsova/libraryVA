@@ -94,3 +94,14 @@
 .menu__submenu > li:focus {
   background-color: rgba(90, 69, 66, 0.4);
 }
+
+.mobileMenu__container {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  display: block;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
