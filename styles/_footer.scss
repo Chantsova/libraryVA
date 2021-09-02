@@ -26,12 +26,17 @@
   }
 }
 
-.reference__link {
+.footer__link {
   display: flex;
+  flex-direction: column;
   align-items: center;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
 }
 
-.reference__img {
+.footer__img {
   height: 50px;
 
   @media (min-width: 768px) {
@@ -50,4 +55,9 @@
 
 .footer__weekend {
   font-weight: 600;
+}
+
+.footer__title {
+  font-family: "Alegreya", serif;
+  font-size: 18px;
 }

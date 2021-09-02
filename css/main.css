@@ -206,9 +206,59 @@ address {
 
 .main {
   display: flex;
+  justify-content: center;
   flex: 1 1 auto;
   height: 100%;
   box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.25);
+}
+
+.references__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.references__title {
+  font-size: 20px;
+}
+
+.references__subtitle {
+  font-size: 16px;
+}
+
+.references__list {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .references__list {
+    flex-direction: row;
+  }
+}
+
+.references__item {
+  padding: 15px;
+  font-size: 10px;
+}
+
+@media (min-width: 768px) {
+  .references__item {
+    padding: 35px;
+    font-size: 12px;
+  }
+}
+
+.references__img {
+  height: 75px;
+}
+
+@media (min-width: 768px) {
+  .references__img {
+    height: 125px;
+  }
 }
 
 .footer {
@@ -242,23 +292,30 @@ address {
   }
 }
 
-.reference__link {
+.footer__link {
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
-.reference__img {
+@media (min-width: 768px) {
+  .footer__link {
+    flex-direction: row;
+  }
+}
+
+.footer__img {
   height: 50px;
 }
 
 @media (min-width: 768px) {
-  .reference__img {
+  .footer__img {
     height: 80px;
   }
 }
 
 @media (min-width: 1024px) {
-  .reference__img {
+  .footer__img {
     height: 100px;
   }
 }
@@ -270,5 +327,10 @@ address {
 
 .footer__weekend {
   font-weight: 600;
+}
+
+.footer__title {
+  font-family: "Alegreya", serif;
+  font-size: 18px;
 }
 /*# sourceMappingURL=main.css.map */
