@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Бібліотека Військової академії, Військова академія">
+    <meta name="keywords" content="Бібліотека, Військова академія">
     <title>Бібліотека Військової академії</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +22,7 @@
           <nav class="header__menu menu">
               <ul class="menu__list">
                 <li class="menu__item">
-                  <a class="menu__link" href="#">Про бібліотеку &#9207</a>
+                  <p class="menu__item__title">Про бібліотеку &#9207</p>
                   <ul class="menu__submenu">
                     <li><a href="">Загальна інформація</a></li>
                     <li><a href="">Положення про бібліотеку</a></li>
@@ -31,7 +33,7 @@
                   </ul>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link" href="#">Бібліотека — користувачам &#9207</a>
+                  <p class="menu__item__title">Бібліотека — користувачам &#9207</p>
                   <ul class="menu__submenu">
                     <li><a href="">Нові надходження</a></li>
                     <li><a href="">Періодичні видання</a></li>
@@ -42,7 +44,7 @@
                   </ul>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link" href="#">Наукова робота бібліотеки &#9207</a>
+                  <p class="menu__item__title">Наукова робота бібліотеки &#9207</p>
                   <ul class="menu__submenu">
                     <li><a href="">Бібліографічні списки</a></li>
                     <li><a href="">Бібліографічні покажчики</a></li>
@@ -61,8 +63,8 @@
           </div>
 
           <div class="mobileMenu__container">
-            <button class="menu__btn menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-              <svg class="menu__icon" width="24" height="16">
+            <button class="mobile-menu__openBtn">
+              <svg class="mobile-menu__openIcon" width="32" height="24">
                 <use href="./img/icons.svg#icon-mobile-menu"></use>
               </svg>
             </button>
@@ -88,7 +90,7 @@
               <li class="box-menu__card">
                 <a class="box-menu__link" href="#">
                   <div class="box-menu__thumb">
-                    <img class="box-menu__img" src="./img/services.jpg" alt="Послуги бібліотеки">
+                    <img class="box-menu__img" src="./img/services.jpg" alt="Services">
                     <div class="overlay">
                       <p class="overlay__text">Що може зробити бібліотека для тих, кому потрібні книги або інші інформаційні джерела чи консультація...</p>
                     </div>
@@ -102,7 +104,7 @@
               <li class="box-menu__card">
                 <a class="box-menu__link" href="#">
                   <div class="box-menu__thumb">
-                    <img class="box-menu__img" src="./img/newAcquisitions.jpg" alt="Нові надходження">
+                    <img class="box-menu__img" src="./img/newAcquisitions.jpg" alt="newAcquisitions">
                     <div class="overlay">
                       <p class="overlay__text">Бібліотека постійно поповнюється новими виданнями. Обирайте, що цікаво для вас...</p>
                     </div>
@@ -116,7 +118,7 @@
               <li class="box-menu__card">
                 <a class="box-menu__link" href="#">
                   <div class="box-menu__thumb">
-                    <img class="box-menu__img" src="./img/newspapers.jpg" alt="Періодичні видання">
+                    <img class="box-menu__img" src="./img/newspapers.jpg" alt="newspapers">
                     <div class="overlay">
                       <p class="overlay__text">Поки пишуться нові книжки, найоперативніша наукова і практична інформація публікується у періодиці...</p>
                     </div>
@@ -130,7 +132,7 @@
               <li class="box-menu__card">
                 <a class="box-menu__link" href="#">
                   <div class="box-menu__thumb">
-                    <img class="box-menu__img" src="./img/VApublished.jpg" alt="Видання Військової академії">
+                    <img class="box-menu__img" src="./img/VApublished.jpg" alt="VApublished">
                     <div class="overlay">
                       <p class="overlay__text">Підручники, навчально-методичні посібники, монографії, наукові статті - від викладачів Військової академії...
 </p>
@@ -146,7 +148,7 @@
               <li class="box-menu__card">
                 <a class="box-menu__link" href="#">
                   <div class="box-menu__thumb">
-                    <img class="box-menu__img" src="./img/libraryNews.jpg" alt="Новини бібліотеки">
+                    <img class="box-menu__img" src="./img/libraryNews.jpg" alt="libraryNews">
                     <div class="overlay">
                       <p class="overlay__text">Що нового відбувається в бібліотеці, і які нові можливості це відкриває для її користувачів...
 </p>
@@ -161,7 +163,7 @@
               <li class="box-menu__card">
                 <a class="box-menu__link" href="#">
                   <div class="box-menu__thumb">
-                    <img class="box-menu__img" src="./img/expositions.jpg" alt="Тематичні виставки">
+                    <img class="box-menu__img" src="./img/expositions.jpg" alt="expositions">
                     <div class="overlay">
                       <p class="overlay__text">Культура, історія, сьогодення - крізь призму друкованого слова. Будь в курсі значущих подій України і світу...</p>
                     </div>
@@ -181,18 +183,18 @@
             <p class="references__subtitle">(доступ з внутрішньої мережі)</p>
             <ul class="references__list">
               <li class="references__item">
-                <a href="http://192.168.1.254"><img class="references__img" src="img/digitalLibrary.jpg">
+                <a href="http://192.168.1.254"><img class="references__img" src="img/digitalLibrary.jpg" alt="digital Library">
                 <h3>Електронна бібліотека <br> Військової академії
                 </h3>
               </a>
               </li>
               <li class="references__item">
-                <a href="https://www.scopus.com/"><img class="references__img" src="img/scopus.jpg">
+                <a href="https://www.scopus.com/"><img class="references__img" src="img/scopus.jpg" alt="scopus">
                 <h3>База данних <br> з цитованості статей Scopus</h3>
               </a>
               </li>
               <li class="references__item">
-                <a href="http://www.webofscience.com"><img class="references__img" src="img/wos.jpg">
+                <a href="http://www.webofscience.com"><img class="references__img" src="img/wos.jpg" alt="web of Science">
                 <h3>База данних наукової літератури і <br> патентів Web of Science</h3>
               </a>
               </li>
@@ -231,19 +233,50 @@
       
     </div>
 
-    <!-- <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu"><svg class="mobile__closeIcon" width="18.67" height="18.67"
+    <div class="mobile-menu__container">
+      <button class="mobile-menu__closeBtn">
+        <svg class="mobile-menu__closeIcon" width="18.67" height="18.67"
           aria-label="Close">
-          <use href="./images/icons.svg#icon-close-mobile-menu"></use>
+          <use href="./img/icons.svg#icon-close-mobile-menu"></use>
           <title>Close</title>
-          <desc>Закрыть модальное окно</desc>
-        </svg></button>
-      <ul class="mobile__menu">
-        <li><a class="menu__item current" href="index.html">Студия</a></li>
-        <li><a class="menu__item" href="portfolio.html">Портфолио</a></li>
-        <li><a class="menu__item" href="#">Контакты</a></li>
-      </ul>
-    </div> -->
+          <desc>Зачинити модальне вікно</desc>
+        </svg>
+      </button>
+        <ul class="mobile-menu__list">
+          <li>
+            <p class="mobile-menu__title">🕮 Про бібліотеку</p>
+            <ul class="mobile-menu__sublist">
+              <li><a href="">Загальна інформація</a></li>
+              <li><a href="">Положення про бібліотеку</a></li>
+              <li><a href="">Правила користування бібліотекою</a></li>
+              <li><a href="">Новини бібліотеки</a></li>
+              <li><a href="">Тематичні виставки</a></li>
+              <li><a href="">Фотогалерея</a></li>
+            </ul>
+          </li>
+          <li>
+            <p class="mobile-menu__title">🕮 Бібліотека — користувачам</p>
+            <ul class="mobile-menu__sublist">
+              <li><a href="">Нові надходження</a></li>
+              <li><a href="">Періодичні видання</a></li>
+              <li><a href="">Видання Військової академії</a></li>
+              <li><a href="">Електронний каталог</a></li>
+              <li><a href="">Електронна бібліотека</a></li>
+              <li><a href="">Послуги бібліотеки</a></li>
+            </ul>
+          </li>
+          <li>
+            <p class="mobile-menu__title">🕮 Наукова робота бібліотеки</p>
+            <ul class="mobile-menu__sublist">
+              <li><a href="">Бібліографічні списки</a></li>
+              <li><a href="">Бібліографічні покажчики</a></li>
+              <li><a href="#">Тематичні бібліографічні ресурси Військової академії</a></li>
+              <li><a href="">Каталоги та картотеки</a></li>
+            </ul>
+          </li>
+        </ul>
+
+    </div>
 
     <script src="index.js"></script>
   </body>

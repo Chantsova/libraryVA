@@ -1,29 +1,24 @@
-// (() => {
-//   const mobileMenu = document.querySelector('.js-menu-container');
-//   const openMenuBtn = document.querySelector('.js-open-menu');
-//   const closeMenuBtn = document.querySelector('.js-close-menu');
+//Modal menu
+const refs = {
+    openBtn: document.querySelector(".mobile-menu__openBtn"),
+    closeBtn: document.querySelector(".mobile-menu__closeBtn"),
+    containerEl: document.querySelector(".mobile-menu__container"),
+    bodyEl: document.querySelector("body")
+}
 
-//   const toggleMenu = () => {
-//     const isMenuOpen =
-//       openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
-//     openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
-//     mobileMenu.classList.toggle('is-open');
+refs.openBtn.addEventListener('click', openMobileMenu);
 
-//     const scrollLockMethod = !isMenuOpen
-//       ? 'disableBodyScroll'
-//       : 'enableBodyScroll';
-//     bodyScrollLock[scrollLockMethod](document.body);
-//   };
 
-//   openMenuBtn.addEventListener('click', toggleMenu);
-//   closeMenuBtn.addEventListener('click', toggleMenu);
+function openMobileMenu(event) {
+    refs.openBtn.removeEventListener('click', openMobileMenu);
+    refs.containerEl.classList.add("is-open");
+    refs.bodyEl.classList.add("not-scroll");
+    refs.closeBtn.addEventListener('click', closeMobileMenu);
+}
 
-// //   // Закрываем мобильное меню на более широких экранах
-// //   // в случае изменения ориентации устройства.
-// //   window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
-// //     if (!e.matches) return;
-// //     mobileMenu.classList.remove('is-open');
-// //     openMenuBtn.setAttribute('aria-expanded', false);
-// //     bodyScrollLock.enableBodyScroll(document.body);
-// //   });
-// })();
+function closeMobileMenu(event) {
+    refs.closeBtn.removeEventListener('click', closeMobileMenu);
+    refs.containerEl.classList.remove("is-open");
+    refs.bodyEl.classList.remove("not-scroll");
+    refs.openBtn.addEventListener('click', openMobileMenu);
+}

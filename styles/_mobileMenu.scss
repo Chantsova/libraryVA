@@ -1,88 +1,76 @@
-// .menu-container {
-//   @media (max-width: 767px) {
-//     display: flex;
-//     flex-direction: column;
-//     padding: 40px;
-//     position: fixed;
-//     top: 0;
-//     left: 0;
-//     width: 100vw;
-//     height: 100vh;
-//     background-color: white;
-//     transition: transform $transitionCommon;
-//     transform: translateX(100%);
-//     overflow-y: scroll;
-//   }
+.mobile-menu__container {
+  @media (min-width: 320px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(168, 158, 148, 0.96);
+    color: rgb(29, 23, 18);
+    font-size: 18px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateX(100%);
+    overflow-y: scroll;
+  }
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
 
-//   @media (min-width: 768px) {
-//     display: none;
-//   }
-// }
+.mobile-menu__container.is-open {
+  transform: translateX(0);
+}
 
-// .menu-container.is-open {
-//   transform: translateX(0);
-// }
+.not-scroll {
+  overflow: hidden;
+}
 
-// .menu-toggle {
-//   position: absolute;
-//   top: 10px;
-//   right: 15px;
-//   color: $textDarkGrey;
-//   min-height: 40px;
-//   min-width: 40px;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   margin: 0;
-//   padding: 0;
-//   background-color: transparent;
-//   cursor: pointer;
-//   border: none;
-//   border-radius: 50%;
-//   outline: none;
-
-//   &:hover,
-//   &:focus {
-//     color: $accentColor;
-//   }
-
-//   @media (min-width: 768px) {
-//     display: none;
-//   }
-// }
-
-.menu__btn {
+.mobile-menu__openBtn {
   background-color: rgba(163, 117, 87, 0.5);
   border: none;
   outline: none;
   box-shadow: 0px 4px 4px rgba(219, 198, 177, 0.5);
 }
 
-.menu__icon {
-  fill: rgba(22, 16, 5, 0.6);
+.mobile-menu__openIcon {
+  fill: rgba(241, 228, 206, 0.8);
 }
 
-// .menu__item {
-//   font-weight: 500;
-//   font-size: $mobileMenuFontSize;
-//   line-height: 1.175;
-//   text-align: center;
-//   letter-spacing: 0.02em;
-//   color: $textDarkGrey;
+.mobile-menu__list {
+  min-width: 280px;
+  margin: 0 auto;
+  padding: 50px 20px 20px;
+}
 
-//   &:hover,
-//   &:focus {
-//     color: $accentColor;
-//   }
-// }
+.mobile-menu__sublist {
+  list-style: circle;
+  margin-bottom: 16px;
+  margin-left: 10px;
+}
 
-// .mobile__closeIcon {
-//   fill: currentColor;
-// }
+.mobile-menu__sublist > li {
+  margin-top: 8px;
+}
 
-// .mobile__menu {
-//   margin-bottom: 302px;
-//   & li:not(:first-child) {
-//     margin-top: 32px;
-//   }
-// }
+.mobile-menu__title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.mobile-menu__closeBtn {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+.mobile-menu__closeIcon {
+  fill: currentColor;
+}
+
+body.modal-open {
+  overflow: hidden;
+  position: fixed;
+}

@@ -30,12 +30,12 @@
   opacity: 0;
 }
 
-.menu__link {
+.menu__item__title {
   font-size: 15px;
   font-weight: 600;
-  color: rgba(233, 229, 229, 0.9);
+  color: rgba(248, 247, 247, 0.9);
 
-  @media (min-width: 955px) {
+  @media (min-width: 1024px) {
     font-size: 18px;
   }
 }
@@ -58,8 +58,8 @@
   background-color: rgba(233, 229, 229, 0.7);
 }
 
-.menu__item:hover .menu__link,
-.menu__item:focus .menu__link {
+.menu__item:hover .menu__item__title,
+.menu__item:focus .menu__item__title {
   color: rgba(44, 30, 22, 0.9);
 }
 
@@ -81,9 +81,6 @@
   -moz-transition: 0.5s ease-in-out;
   -o-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
-
-  @media (max-width: 955px) {
-  }
 }
 
 .menu__submenu > li {

@@ -167,14 +167,14 @@ address {
   opacity: 0;
 }
 
-.menu__link {
+.menu__item__title {
   font-size: 15px;
   font-weight: 600;
-  color: rgba(233, 229, 229, 0.9);
+  color: rgba(248, 247, 247, 0.9);
 }
 
-@media (min-width: 955px) {
-  .menu__link {
+@media (min-width: 1024px) {
+  .menu__item__title {
     font-size: 18px;
   }
 }
@@ -199,8 +199,8 @@ address {
   background-color: rgba(233, 229, 229, 0.7);
 }
 
-.menu__item:hover .menu__link,
-.menu__item:focus .menu__link {
+.menu__item:hover .menu__item__title,
+.menu__item:focus .menu__item__title {
   color: rgba(44, 30, 22, 0.9);
 }
 
@@ -254,9 +254,8 @@ address {
 }
 
 .about__text {
-  font-family: "Alegreya", serif;
-  margin-top: 13px;
-  font-size: 20px;
+  margin-top: 15px;
+  font-size: 18px;
   text-align: justify;
 }
 
@@ -479,14 +478,83 @@ address {
   font-size: 18px;
 }
 
-.menu__btn {
+@media (min-width: 320px) {
+  .mobile-menu__container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(168, 158, 148, 0.96);
+    color: #1d1712;
+    font-size: 18px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateX(100%);
+    overflow-y: scroll;
+  }
+}
+
+@media (min-width: 768px) {
+  .mobile-menu__container {
+    display: none;
+  }
+}
+
+.mobile-menu__container.is-open {
+  transform: translateX(0);
+}
+
+.not-scroll {
+  overflow: hidden;
+}
+
+.mobile-menu__openBtn {
   background-color: rgba(163, 117, 87, 0.5);
   border: none;
   outline: none;
   box-shadow: 0px 4px 4px rgba(219, 198, 177, 0.5);
 }
 
-.menu__icon {
-  fill: rgba(22, 16, 5, 0.6);
+.mobile-menu__openIcon {
+  fill: rgba(241, 228, 206, 0.8);
+}
+
+.mobile-menu__list {
+  min-width: 280px;
+  margin: 0 auto;
+  padding: 50px 20px 20px;
+}
+
+.mobile-menu__sublist {
+  list-style: circle;
+  margin-bottom: 16px;
+  margin-left: 10px;
+}
+
+.mobile-menu__sublist > li {
+  margin-top: 8px;
+}
+
+.mobile-menu__title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.mobile-menu__closeBtn {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+.mobile-menu__closeIcon {
+  fill: currentColor;
+}
+
+body.modal-open {
+  overflow: hidden;
+  position: fixed;
 }
 /*# sourceMappingURL=main.css.map */
