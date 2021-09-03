@@ -57,21 +57,8 @@ address {
   flex-direction: column;
 }
 
-.section__title {
-  font-size: 20px;
-  text-align: center;
-}
-
-.hidden-title {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+.section__text {
+  margin-top: 15px;
+  font-size: 18px;
+  text-align: justify;
 }

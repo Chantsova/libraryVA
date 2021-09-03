@@ -83,6 +83,17 @@ body.modal-open {
   text-decoration: underline;
 }
 
+.mobileMenu__container {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  display: block;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
 .current--mobile {
   background-color: rgba(156, 129, 106, 0.6);
   pointer-events: none;

@@ -96,19 +96,8 @@
   background-color: rgba(90, 69, 66, 0.4);
 }
 
-.mobileMenu__container {
-  position: absolute;
-  top: 40px;
-  right: 40px;
-  display: block;
-
-  @media (min-width: 768px) {
-    display: none;
-  }
-}
-
 .current {
   background-color: rgba(207, 156, 114, 0.4);
   pointer-events: none;
-  font-weight: bold;
+  font-weight: 700;
 }
