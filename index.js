@@ -8,7 +8,6 @@ const refs = {
 
 refs.openBtn.addEventListener('click', openMobileMenu);
 
-
 function openMobileMenu(event) {
     refs.openBtn.removeEventListener('click', openMobileMenu);
     refs.containerEl.classList.add("is-open");

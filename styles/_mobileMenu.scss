@@ -39,7 +39,7 @@
 .mobile-menu__list {
   min-width: 280px;
   margin: 0 auto;
-  padding: 50px 20px 20px;
+  padding: 60px 20px 20px;
 }
 
 .mobile-menu__sublist {
@@ -53,8 +53,10 @@
 }
 
 .mobile-menu__title {
-  font-size: 18px;
+  font-family: "Alegreya", serif;
+  font-size: 20px;
   font-weight: 600;
+  text-align: center;
 }
 
 .mobile-menu__closeBtn {
@@ -73,4 +75,16 @@
 body.modal-open {
   overflow: hidden;
   position: fixed;
+}
+
+.return-main--mobile {
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.current--mobile {
+  background-color: rgba(156, 129, 106, 0.6);
+  pointer-events: none;
+  font-weight: 600;
 }
