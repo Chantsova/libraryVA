@@ -1,0 +1,18 @@
+.rules__nav {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.rules__list {
+  font-size: 16px;
+  font-weight: 600;
+
+  & > li {
+    margin-top: 8px;
+  }
+
+  & > li:hover,
+  & > li:focus {
+    color: rgb(175, 88, 37);
+  }
+}

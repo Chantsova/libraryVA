@@ -10,6 +10,10 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -30,7 +34,7 @@ button {
 }
 
 ul {
-  list-style-type: none;
+  list-style-type: circle;
 }
 
 address {
@@ -61,4 +65,12 @@ address {
   margin-top: 15px;
   font-size: 18px;
   text-align: justify;
+}
+
+.text-bold {
+  font-weight: 600;
+}
+
+.text-italic {
+  font-style: italic;
 }
