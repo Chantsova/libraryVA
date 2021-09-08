@@ -6,6 +6,7 @@
 .rules__list {
   font-size: 16px;
   font-weight: 600;
+  margin-bottom: 20px;
 
   & > li {
     margin-top: 8px;
@@ -15,4 +16,8 @@
   & > li:focus {
     color: rgb(175, 88, 37);
   }
+}
+
+.rules__dsk {
+  margin-top: 60px;
 }

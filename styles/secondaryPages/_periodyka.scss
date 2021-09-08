@@ -1,0 +1,48 @@
+.periodicals__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
+  min-width: 260px;
+  font-size: 10px;
+
+  @media (min-width: 610px) {
+    font-size: 13px;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+.magazines {
+  font-size: 7px;
+  @media (min-width: 610px) {
+    font-size: 10px;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+.table__title {
+  font-size: 20px;
+}
+
+.periodicals__table {
+  border: 3px solid rgb(172, 167, 167);
+  margin-top: 5px;
+}
+
+th {
+  background-color: rgba(221, 216, 219, 0.5);
+  text-align: center;
+}
+
+tr,
+td {
+  border: 1px solid rgba(221, 216, 219, 0.8);
+  text-align: center;
+  padding: 3px;
+}
