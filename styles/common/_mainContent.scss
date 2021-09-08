@@ -34,3 +34,28 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.img {
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.img__thumb--left {
+  display: flex;
+  justify-content: center;
+  margin: 15px 15px 15px 0;
+
+  @media (min-width: 610px) {
+    float: left;
+  }
+}
+
+.img__thumb--right {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0 15px 15px;
+
+  @media (min-width: 610px) {
+    float: right;
+  }
+}
