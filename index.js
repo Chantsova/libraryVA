@@ -21,3 +21,14 @@ function closeMobileMenu(event) {
     refs.bodyEl.classList.remove("not-scroll");
     refs.openBtn.addEventListener('click', openMobileMenu);
 }
+
+//Button-Up
+const arrowTop = document.querySelector(".arrowTop");
+
+arrowTop.addEventListener('click', function () {
+  window.scrollTo(window.pageXOffset, 0);
+});
+
+window.addEventListener('scroll', function() {
+arrowTop.hidden = (window.pageYOffset < document.documentElement.clientHeight);
+});
