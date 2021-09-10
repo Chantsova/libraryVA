@@ -70,9 +70,12 @@
 
 .box-menu__title {
   text-align: center;
-  font-size: 18px;
+  font-size: 15px;
   background-color: rgba(223, 185, 139, 0.4);
   padding: 5px;
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
 }
 
 .overlay {
