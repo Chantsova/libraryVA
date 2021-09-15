@@ -1,0 +1,41 @@
+.photoModal {
+  @media (min-width: 320px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(49, 47, 45, 0.7);
+    color: rgb(29, 23, 18);
+    font-size: 18px;
+    transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateX(100%);
+    overflow-y: scroll;
+  }
+}
+
+.photoModal.is-open {
+  transform: translateX(0);
+}
+
+.photoModal__img {
+  max-width: 90vw;
+  max-height: 750px;
+}
+
+.photoModal:hover,
+.photoModal:focus {
+  cursor: zoom-out;
+}
+
+.gallery__set {
+  margin-top: 20px;
+}
+
+.gallery__img:hover,
+.gallery__img:focus {
+  cursor: zoom-in;
+}
