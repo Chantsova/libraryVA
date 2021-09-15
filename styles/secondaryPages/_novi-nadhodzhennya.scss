@@ -1,0 +1,50 @@
+.newFlows__nav {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.newFlows__menu {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+
+  & > li {
+    margin-top: 8px;
+  }
+
+  & > li:hover,
+  & > li:focus {
+    color: rgb(175, 88, 37);
+  }
+}
+
+.newFlows__title {
+  font-size: 18px;
+  text-align: center;
+  margin: 30px 0 0;
+}
+
+.newFlows__list {
+  font-size: 16px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+
+  & > li {
+    margin-top: 8px;
+  }
+}
+
+.newFlows__reference {
+  margin: 30px 0 20px;
+  font-size: 18px;
+}
+
+.newFlows__link {
+  color: rgb(175, 88, 37);
+  font-weight: 600;
+
+  &:hover,
+  &:focus {
+    color: rgb(45, 35, 192);
+  }
+}

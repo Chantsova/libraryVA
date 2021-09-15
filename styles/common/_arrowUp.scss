@@ -1,0 +1,28 @@
+//ButtonUp styles
+.arrowTop {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  bottom: 40px;
+  right: 20px;
+  cursor: pointer;
+  border-radius: 45px;
+  background-color: rgba(219, 198, 177, 0.2);
+  box-shadow: 1px 1px 5px rgba(90, 69, 66, 1);
+}
+
+.arrowTop .hidden {
+  display: none;
+}
+
+.arrowTop:hover,
+.arrowTop:focus {
+  background-color: rgba(117, 102, 99, 0.5);
+}
+
+[hidden] {
+  display: none;
+}

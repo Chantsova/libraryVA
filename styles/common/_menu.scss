@@ -68,6 +68,22 @@
   background-color: rgba(253, 253, 253, 0.7);
 }
 
+.menu__item__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu__item__arrow {
+  transform: rotate(-90deg);
+  transition: 0.5s ease-in-out;
+}
+
+.menu__item:hover .menu__item__arrow,
+.menu__item:focus .menu__item__arrow {
+  transform: rotate(0);
+}
+
 .menu__text {
   font-size: 15px;
 }
@@ -88,12 +104,13 @@
   list-style-type: none;
 }
 
-.menu__submenu > li {
+.menu__submenu__link {
+  display: block;
   padding: 3px 0;
 }
 
-.menu__submenu > li:hover,
-.menu__submenu > li:focus {
+.menu__submenu__link:hover,
+.menu__submenu__link:focus {
   background-color: rgba(90, 69, 66, 0.4);
 }
 
