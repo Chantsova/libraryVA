@@ -796,8 +796,39 @@ td {
   color: #af5825;
 }
 
-.rules__dsk {
-  margin-top: 60px;
+.publication__nav {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.publication__menu {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.publication__menu > li {
+  margin-top: 8px;
+}
+
+.publication__menu > li:hover,
+.publication__menu > li:focus {
+  color: #af5825;
+}
+
+.publication__title {
+  font-size: 16px;
+  margin: 30px 0 0;
+}
+
+.publication__list {
+  font-size: 16px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.publication__list > li {
+  margin-top: 8px;
 }
 
 .common__subsection__title {
