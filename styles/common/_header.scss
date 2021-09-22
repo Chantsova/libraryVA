@@ -8,33 +8,65 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.header__background {
-  background-size: cover;
-  // background-image: linear-gradient(
-  //     to right,
-  //     rgba(44, 30, 22, 0.4),
-  //     rgba(47, 48, 58, 0.5)
-  //   ),
-  //   url("../img/VaodessaHeader.jpg");
+.header__hero--main {
   background-image: linear-gradient(
       to right,
-      rgba(131, 104, 78, 0.5),
-      rgba(22, 16, 5, 0.6)
+      rgba(114, 95, 78, 0.6),
+      rgba(22, 16, 5, 0.7)
     ),
-    url("../img/VaodessaHeader.jpg");
+    url("../../img/VaodessaHeader.jpg");
+}
+
+.header__hero--common {
+  background-image: linear-gradient(
+      to right,
+      rgba(114, 95, 78, 0.6),
+      rgba(22, 16, 5, 0.7)
+    ),
+    url("../../img/heroCommon.jpg");
+}
+
+.header__hero--services {
+  background-image: linear-gradient(
+      to right,
+      rgba(114, 95, 78, 0.6),
+      rgba(22, 16, 5, 0.7)
+    ),
+    url("../../img/heroServices.jpg");
+}
+
+.header__hero--science {
+  background-image: linear-gradient(
+      to right,
+      rgba(114, 95, 78, 0.6),
+      rgba(22, 16, 5, 0.7)
+    ),
+    url("../../img/heroScience.jpg");
+}
+
+.header__background {
+  background-color: #464646;
+  background-size: cover;
+  background-position: center center;
   background-repeat: no-repeat;
-  max-width: 728px;
-  height: 208px;
+
+  max-width: 727px;
+  height: 250px;
 
   @media (min-width: 768px) {
+    max-width: 983px;
+    height: 350px;
+  }
+
+  @media (min-width: 1024px) {
     max-width: 1400px;
-    height: 400px;
+    height: 500px;
   }
 }
 
 .header__title {
   position: absolute;
-  top: 100px;
+  top: 150px;
   left: -30px;
   width: 300px;
   display: block;
@@ -46,15 +78,26 @@
     left: -30px;
     width: 600px;
   }
+
+  @media (min-width: 1024px) {
+    top: 350px;
+    left: -30px;
+    width: 650px;
+  }
 }
 
 .header__image {
   position: relative;
-  left: 50px;
   width: 250px;
+  left: 50px;
 
   @media (min-width: 768px) {
     width: 450px;
+    left: 55px;
+  }
+
+  @media (min-width: 1024px) {
+    width: 550px;
     left: 55px;
   }
 }
