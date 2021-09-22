@@ -21,7 +21,7 @@
   margin-bottom: 20px;
 
   & > p {
-    margin-bottom: 5px;
+    margin-top: 5px;
   }
 }
 
@@ -39,21 +39,9 @@
 }
 
 .staff__img {
-  display: none;
-
+  max-width: 300px;
   @media (min-width: 768px) {
-    display: block;
     margin-top: 40px;
-    max-width: 521px;
-  }
-}
-
-.common__img {
-  display: flex;
-  align-items: center;
-  max-width: 260px;
-
-  @media (min-width: 768px) {
-    max-width: 521px;
+    max-width: 550px;
   }
 }
