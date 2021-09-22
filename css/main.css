@@ -172,27 +172,27 @@ address {
   background-position: center center;
   background-repeat: no-repeat;
   max-width: 727px;
-  height: 250px;
+  height: 200px;
 }
 
 @media (min-width: 768px) {
   .header__background {
     max-width: 983px;
-    height: 350px;
+    height: 300px;
   }
 }
 
 @media (min-width: 1024px) {
   .header__background {
     max-width: 1400px;
-    height: 500px;
+    height: 400px;
   }
 }
 
 .header__title {
   position: absolute;
-  top: 150px;
-  left: -30px;
+  top: 130px;
+  left: -25px;
   width: 300px;
   display: block;
   background-color: rgba(253, 253, 253, 0.5);
@@ -201,7 +201,7 @@ address {
 
 @media (min-width: 768px) {
   .header__title {
-    top: 270px;
+    top: 220px;
     left: -30px;
     width: 600px;
   }
@@ -209,7 +209,7 @@ address {
 
 @media (min-width: 1024px) {
   .header__title {
-    top: 350px;
+    top: 300px;
     left: -30px;
     width: 650px;
   }
