@@ -151,19 +151,19 @@ address {
 }
 
 .header__hero--main {
-  background-image: linear-gradient(to right, rgba(114, 95, 78, 0.6), rgba(22, 16, 5, 0.7)), url("../../img/VaodessaHeader.jpg");
+  background-image: linear-gradient(to right, rgba(114, 95, 78, 0.6), rgba(22, 16, 5, 0.7)), url("../img/VaodessaHeader.jpg");
 }
 
 .header__hero--common {
-  background-image: linear-gradient(to right, rgba(114, 95, 78, 0.6), rgba(22, 16, 5, 0.7)), url("../../img/heroCommon.jpg");
+  background-image: linear-gradient(to right, rgba(114, 95, 78, 0.6), rgba(22, 16, 5, 0.7)), url("../img/heroCommon.jpg");
 }
 
 .header__hero--services {
-  background-image: linear-gradient(to right, rgba(114, 95, 78, 0.6), rgba(22, 16, 5, 0.7)), url("../../img/heroServices.jpg");
+  background-image: linear-gradient(to right, rgba(114, 95, 78, 0.6), rgba(22, 16, 5, 0.7)), url("../img/heroServices.jpg");
 }
 
 .header__hero--science {
-  background-image: linear-gradient(to right, rgba(114, 95, 78, 0.6), rgba(22, 16, 5, 0.7)), url("../../img/heroScience.jpg");
+  background-image: linear-gradient(to right, rgba(114, 95, 78, 0.6), rgba(22, 16, 5, 0.7)), url("../img/heroScience.jpg");
 }
 
 .header__background {
