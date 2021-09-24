@@ -1,9 +1,4 @@
-.main {
-  flex: 1 1 auto;
-  height: 100%;
-  box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.25);
-}
-
+//Common text and titles styles
 .section__title {
   font-size: 20px;
   text-align: center;
@@ -16,9 +11,9 @@
 }
 
 .subsection__title {
+  margin: 30px 0 0;
   font-size: 16px;
   text-align: center;
-  margin: 30px 0 0;
 }
 
 .hidden-title {
@@ -26,8 +21,8 @@
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
   padding: 0;
+  border: 0;
   white-space: nowrap;
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
@@ -35,12 +30,21 @@
   overflow: hidden;
 }
 
+.text-bold {
+  font-weight: 600;
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+//Common images styles
 .img {
-  border-radius: 10px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   display: flex;
   align-items: center;
-  background-color: rgba(223, 185, 139, 0.4);
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px $shadowSecondColor;
+  background-color: $pagePartColor;
 }
 
 .img__thumb--left {
@@ -64,7 +68,7 @@
 }
 
 .img--horiz {
-  max-width: 300px;
+  max-width: 260px;
 
   @media (min-width: 768px) {
     max-width: 440px;

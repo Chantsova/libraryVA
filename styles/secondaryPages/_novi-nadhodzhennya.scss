@@ -4,9 +4,9 @@
 }
 
 .newFlows__menu {
+  margin-bottom: 20px;
   font-size: 16px;
   font-weight: 600;
-  margin-bottom: 20px;
 
   & > li {
     margin-top: 8px;
@@ -14,20 +14,20 @@
 
   & > li:hover,
   & > li:focus {
-    color: rgb(175, 88, 37);
+    color: $accentColor;
   }
 }
 
 .newFlows__title {
+  margin: 30px 0 0;
   font-size: 18px;
   text-align: center;
-  margin: 30px 0 0;
 }
 
 .newFlows__list {
-  font-size: 16px;
   margin-left: 10px;
   margin-bottom: 10px;
+  font-size: 16px;
 
   & > li {
     margin-top: 8px;
@@ -40,11 +40,11 @@
 }
 
 .newFlows__link {
-  color: rgb(175, 88, 37);
+  color: $accentColor;
   font-weight: 600;
 
   &:hover,
   &:focus {
-    color: rgb(45, 35, 192);
+    color: $linkHoverColor;
   }
 }

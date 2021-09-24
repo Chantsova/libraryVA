@@ -3,32 +3,32 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(49, 47, 45, 0.7);
-    color: rgb(29, 23, 18);
+    width: 100vw;
+    height: 100vh;
     font-size: 18px;
     transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
     transform: translateX(100%);
     overflow-y: scroll;
+    color: rgb(29, 23, 18);
+    background-color: $photoModalColor;
   }
-}
 
-.photoModal.is-open {
-  transform: translateX(0);
+  &:hover,
+  &:focus {
+    cursor: zoom-out;
+  }
+
+  &.is-open {
+    transform: translateX(0);
+  }
 }
 
 .photoModal__img {
   max-width: 90vw;
   max-height: 750px;
-}
-
-.photoModal:hover,
-.photoModal:focus {
-  cursor: zoom-out;
 }
 
 .gallery__set {

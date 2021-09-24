@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 50px;
   min-width: 260px;
+  margin-top: 50px;
   font-size: 10px;
 
   @media (min-width: 610px) {
@@ -31,18 +31,18 @@
 }
 
 .periodicals__table {
-  border: 3px solid rgb(172, 167, 167);
   margin-top: 5px;
+  border: 3px solid $tableBorderColor;
 }
 
 th {
-  background-color: rgba(221, 216, 219, 0.5);
   text-align: center;
+  background-color: $tableHeaderColor;
 }
 
 tr,
 td {
-  border: 1px solid rgba(221, 216, 219, 0.8);
-  text-align: center;
   padding: 3px;
+  border: 1px solid $tableCageColor;
+  text-align: center;
 }

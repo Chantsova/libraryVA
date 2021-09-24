@@ -1,8 +1,8 @@
 //Modal menu
 const refs = {
-    openBtn: document.querySelector(".mobile-menu__openBtn"),
+    openBtn: document.querySelector(".open-mobile-menu__btn"),
     closeBtn: document.querySelector(".mobile-menu__closeBtn"),
-    containerEl: document.querySelector(".mobile-menu__container"),
+    containerEl: document.querySelector(".mobile-menu"),
     bodyEl: document.querySelector("body")
 }
 

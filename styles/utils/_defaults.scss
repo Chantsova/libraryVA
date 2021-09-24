@@ -15,10 +15,10 @@ html {
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
   padding: 0;
   margin: 0;
+  text-decoration: none;
+  color: inherit;
 }
 
 h1,
@@ -47,22 +47,24 @@ address {
   margin: 0 auto;
 }
 
+.not-scroll {
+  overflow: hidden;
+}
+
+.main {
+  flex: 1 1 auto;
+  height: 100%;
+  box-shadow: 0px 5px 40px $shadowSecondColor;
+}
+
 .section {
   display: flex;
   justify-content: center;
 }
 
 .container {
-  max-width: 1024px;
-  padding: 50px 20px;
   display: flex;
   flex-direction: column;
-}
-
-.text-bold {
-  font-weight: 600;
-}
-
-.text-italic {
-  font-style: italic;
+  max-width: 1024px;
+  padding: 50px 20px;
 }

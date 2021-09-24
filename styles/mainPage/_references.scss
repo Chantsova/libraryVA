@@ -16,9 +16,10 @@
 .references__item {
   display: flex;
   justify-content: center;
-  text-align: center;
   padding: 15px;
   font-size: 10px;
+  text-align: center;
+
   @media (min-width: 768px) {
     padding: 35px;
     font-size: 12px;

@@ -4,9 +4,9 @@
 }
 
 .rules__list {
+  margin-bottom: 20px;
   font-size: 16px;
   font-weight: 600;
-  margin-bottom: 20px;
 
   & > li {
     margin-top: 8px;
@@ -14,6 +14,6 @@
 
   & > li:hover,
   & > li:focus {
-    color: rgb(175, 88, 37);
+    color: $accentColor;
   }
 }

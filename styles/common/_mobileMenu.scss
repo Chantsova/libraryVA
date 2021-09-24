@@ -1,56 +1,42 @@
-.mobile-menu__container {
+//Mobile menu styles
+.mobile-menu {
   @media (min-width: 320px) {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(168, 158, 148, 0.96);
-    color: rgb(29, 23, 18);
     font-size: 18px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transform: translateX(100%);
     overflow-y: scroll;
+    background-color: $mobileMenuBGColor;
+    color: $mobileMenuColor;
   }
   @media (min-width: 768px) {
     display: none;
   }
-}
 
-.mobile-menu__container.is-open {
-  transform: translateX(0);
-}
-
-.not-scroll {
-  overflow: hidden;
-}
-
-.mobile-menu__openBtn {
-  background-color: rgba(163, 117, 87, 0.5);
-  border: none;
-  outline: none;
-  box-shadow: 0px 4px 4px rgba(219, 198, 177, 0.5);
-}
-
-.mobile-menu__openIcon {
-  fill: rgba(241, 228, 206, 0.8);
+  &.is-open {
+    transform: translateX(0);
+  }
 }
 
 .mobile-menu__list {
-  list-style-type: none;
   min-width: 280px;
   margin: 0 auto;
   padding: 60px 20px 20px;
+  list-style-type: none;
 }
 
 .mobile-menu__sublist {
-  list-style: circle;
   margin-bottom: 16px;
   margin-left: 10px;
-}
+  list-style: circle;
 
-.mobile-menu__sublist > li {
-  margin-top: 8px;
+  & > li {
+    margin-top: 8px;
+  }
 }
 
 .mobile-menu__title {
@@ -60,6 +46,24 @@
   text-align: center;
 }
 
+body.modal-open {
+  position: fixed;
+  overflow: hidden;
+}
+
+.return-main--mobile {
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.current--mobile {
+  pointer-events: none;
+  font-weight: 600;
+  background-color: $mobileMenuCurrentColor;
+}
+
+//Mobile menu close
 .mobile-menu__closeBtn {
   position: absolute;
   right: 30px;
@@ -73,30 +77,25 @@
   fill: currentColor;
 }
 
-body.modal-open {
-  overflow: hidden;
-  position: fixed;
-}
-
-.return-main--mobile {
-  margin-bottom: 20px;
-  font-weight: 600;
-  text-decoration: underline;
-}
-
-.mobileMenu__container {
+//Open button styles
+.open-mobile-menu {
+  display: block;
   position: absolute;
   top: 40px;
   right: 40px;
-  display: block;
 
   @media (min-width: 768px) {
     display: none;
   }
 }
 
-.current--mobile {
-  background-color: rgba(156, 129, 106, 0.6);
-  pointer-events: none;
-  font-weight: 600;
+.open-mobile-menu__btn {
+  background-color: $mobileMenuOpenBtnColor;
+  border: none;
+  outline: none;
+  box-shadow: 0px 4px 4px $returnShadowColor;
+}
+
+.open-mobile-menu__icon {
+  fill: $mobileMenuIconColor;
 }

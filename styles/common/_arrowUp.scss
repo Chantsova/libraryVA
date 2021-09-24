@@ -1,26 +1,22 @@
 //ButtonUp styles
 .arrowTop {
   position: fixed;
+  bottom: 40px;
+  right: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 50px;
   width: 50px;
-  bottom: 40px;
-  right: 20px;
   cursor: pointer;
   border-radius: 45px;
-  background-color: rgba(219, 198, 177, 0.2);
-  box-shadow: 1px 1px 5px rgba(90, 69, 66, 1);
-}
-
-.arrowTop .hidden {
-  display: none;
+  background-color: $UpBtnColor;
+  box-shadow: 1px 1px 5px $shadowUpBtnColor;
 }
 
 .arrowTop:hover,
 .arrowTop:focus {
-  background-color: rgba(117, 102, 99, 0.5);
+  background-color: $hoverUpBtnColor;
 }
 
 [hidden] {
