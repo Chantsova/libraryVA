@@ -1,13 +1,19 @@
 //Common text and titles styles
 .section__title {
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
+  @media (min-width: 768px) {
+    font-size: 20px;
+  }
 }
 
 .section__text {
   margin-top: 15px;
-  font-size: 18px;
+  font-size: 16px;
   text-align: justify;
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
 }
 
 .subsection__title {
